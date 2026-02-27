@@ -28,10 +28,11 @@ public class MataKuliah {
     }
 
     public void printInfo() {
-        System.out.println("Kode              : ");
-        System.out.println("Nama              : ");
-        System.out.println("SKS               : ");
-        System.out.println("Jumlah Jam        : ");
+        System.out.println("Kode              : " + this.kode);
+        System.out.println("Nama              : " + this.nama);
+        System.out.println("SKS               : " + this.sks);
+        System.out.println("Jumlah Jam        : " + this.jumlahJam);
         System.out.println("-------------------------------------------------");
     }
+    
 }
