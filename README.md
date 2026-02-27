@@ -1,4 +1,4 @@
-# College Assignments - Algorithm and Data Structure
+# 📘 College Assignments - Algorithm and Data Structure
 
 ## 📖 Description 
 This repository serves as a digital portfolio for all my programming assignments throughout the semester. Inside, you will find various Java implementations, ranging from basic logic to advanced concepts like **Array of Objects**, **Linked Lists**, and **Searching/Sorting Algorithms**.
