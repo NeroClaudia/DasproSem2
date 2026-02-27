@@ -2,28 +2,20 @@ import java.util.Scanner;
 public class MataKuliahDemo {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        MataKuliah[] arrayOfMataKuliah = new MataKuliah[3];
-        String kode, nama, dummy;
-        int sks, jumlahJam;
+        int jmlMatkul;
+        
+        System.out.print("Masukkan Jumlah Mata Kuliah: ");
+        jmlMatkul = scanner.nextInt();
+        scanner.nextLine();
+        MataKuliah[] arrayOfMataKuliah = new MataKuliah[jmlMatkul];
 
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < arrayOfMataKuliah.length; i++) {
             System.out.println("Masukkan Data Mata kuliah ke-" + (i + 1));
-            System.out.print("Kode          : ");
-            kode = scanner.nextLine();
-            System.out.print("Nama          : ");
-            nama = scanner.nextLine();
-            System.out.print("SKS           : ");
-            dummy = scanner.nextLine();
-            sks = Integer.parseInt(dummy);
-            System.out.print("Jumlah Jam    : ");
-            dummy = scanner.nextLine();
-            jumlahJam = Integer.parseInt(dummy);
-            System.out.println("-------------------------------------------------");
-
-            arrayOfMataKuliah[i] = new MataKuliah(kode, nama, sks, jumlahJam);
+            arrayOfMataKuliah[i] = new MataKuliah("", "", 0, 0);
+            arrayOfMataKuliah[i].addData(scanner);
         }
 
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < arrayOfMataKuliah.length; i++) {
             System.out.println("Data MataKuliah ke-" + (i + 1));
             System.out.println("Kode              : " + arrayOfMataKuliah[i].kode);
             System.out.println("Nama              : " + arrayOfMataKuliah[i].nama);
@@ -31,8 +23,6 @@ public class MataKuliahDemo {
             System.out.println("Jumlah Jam        : " + arrayOfMataKuliah[i].jumlahJam);
             System.out.println("-------------------------------------------------");
         }
-        
-        
         scanner.close();
         
     }
