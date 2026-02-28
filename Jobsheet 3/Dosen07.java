@@ -19,8 +19,9 @@ public class Dosen07 {
         System.out.print("Nama Dosen: ");
         this.name = scanner.nextLine();
 
-        System.out.print("Gender (True = Laki-laki, False = Perempuan): ");
-        this.gender = Boolean.parseBoolean(scanner.nextLine());
+        System.out.print("Gender (L = Laki-laki, P = Perempuan): ");
+        String inputGender = scanner.nextLine().trim().toUpperCase();
+        this.gender = inputGender.equalsIgnoreCase("L");
 
         System.out.print("Umur: ");
         this.age = Integer.parseInt(scanner.nextLine());
