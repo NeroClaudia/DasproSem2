@@ -14,14 +14,21 @@ public class DosenDemo {
             arrayDaftarDosen[i] = new Dosen07("", "", false, 0);
             arrayDaftarDosen[i].inputData(scanner);
         }
-
+        
+        System.out.println("\n===== /DAFTAR DOSEN/ =====");
         int no = 1;
-        System.out.println("===== /DAFTAR DOSEN/ =====");
         for (Dosen07 d : arrayDaftarDosen) {
             System.out.println("Dosen ke-" + no);
             d.tampilData();
             no++;
         }
+
+        DataDosen07 dataDosen = new DataDosen07();
+        dataDosen.numberOfLecturesPerGender(arrayDaftarDosen);
+        dataDosen.AverageAgeOfLecturersPerGender(arrayDaftarDosen);
+        dataDosen.infoDosenPalingTua(arrayDaftarDosen);
+        dataDosen.infoDosenMostYoungest(arrayDaftarDosen);
+
         scanner.close();
     }
 }
