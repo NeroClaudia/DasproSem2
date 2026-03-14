@@ -1,0 +1,17 @@
+# --- FOLDER HASIL COMPILE ---
+bin/
+out/
+
+# --- FILE JAVA COMPILE ---
+*.class
+
+# --- SETTINGAN EDITOR (VS CODE) ---
+.vscode/
+
+# --- FILE LOG & TEMPORARY ---
+*.log
+*.tmp
+
+# --- SYSTEM FILES ---
+.DS_Store
+Thumbs.db
